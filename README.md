@@ -70,7 +70,7 @@
   
   <h3>Sobre mim</h3>
   
-  <p>Meu nome completo é Gabriel Ferreira Rosa, tenho 16 anos e atualmente estou cursando o 2º ano do ensino médio.
+  <p>Meu nome completo é Gabriel Ferreira Rosa, tenho 18 anos e atualmente estou no 1º semestre de Eng. da Computação.
   Pretendo trabalhar na área de desenvolvimento web como front-end assim que terminar a escola. Gosto de desenvover 
   aplicações com um design moderno e gosto de trabalhar em equipe.</p>
   
