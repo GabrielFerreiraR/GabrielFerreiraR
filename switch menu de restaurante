@@ -1,0 +1,100 @@
+#include <stdio.h>
+
+void exibirOpcoesPizza() {
+    printf("Opções de Pizza:\n");
+    printf("1. Pizza de Queijo\n");
+    printf("2. Pizza de Pepperoni\n");
+    printf("3. Pizza Vegetariana\n");
+}
+
+void exibirOpcoesSobremesa() {
+    printf("Opções de Sobremesa:\n");
+    printf("1. Bolo de Chocolate\n");
+    printf("2. Sorvete de Baunilha\n");
+    printf("3. Frutas Frescas\n");
+}
+
+void exibirOpcoesBebida() {
+    printf("Opções de Bebida:\n");
+    printf("1. Refrigerante\n");
+    printf("2. Suco Natural\n");
+    printf("3. Água\n");
+}
+
+int main() {
+    int escolhaPrincipal, escolhaSecundaria;
+
+    printf("Bem-vindo ao Restaurante!\n");
+    printf("Escolha uma opção:\n");
+    printf("1. Pizza\n");
+    printf("2. Sobremesa\n");
+    printf("3. Bebida\n");
+    printf("4. Sair\n");
+
+    printf("Sua escolha: ");
+    scanf("%d", &escolhaPrincipal);
+
+    switch(escolhaPrincipal) {
+        case 1:
+            exibirOpcoesPizza();
+            printf("Escolha sua pizza: ");
+            scanf("%d", &escolhaSecundaria);
+            switch(escolhaSecundaria) {
+                case 1:
+                    printf("Você escolheu Pizza de Queijo. Bom apetite!\n");
+                    break;
+                case 2:
+                    printf("Você escolheu Pizza de Pepperoni. Bom apetite!\n");
+                    break;
+                case 3:
+                    printf("Você escolheu Pizza Vegetariana. Bom apetite!\n");
+                    break;
+                default:
+                    printf("Opção inválida. Por favor, escolha uma opção válida.\n");
+            }
+            break;
+        case 2:
+            exibirOpcoesSobremesa();
+            printf("Escolha sua sobremesa: ");
+            scanf("%d", &escolhaSecundaria);
+            switch(escolhaSecundaria) {
+                case 1:
+                    printf("Você escolheu Bolo de Chocolate. Bom apetite!\n");
+                    break;
+                case 2:
+                    printf("Você escolheu Sorvete de Baunilha. Bom apetite!\n");
+                    break;
+                case 3:
+                    printf("Você escolheu Frutas Frescas. Bom apetite!\n");
+                    break;
+                default:
+                    printf("Opção inválida. Por favor, escolha uma opção válida.\n");
+            }
+            break;
+        case 3:
+            exibirOpcoesBebida();
+            printf("Escolha sua bebida: ");
+            scanf("%d", &escolhaSecundaria);
+            switch(escolhaSecundaria) {
+                case 1:
+                    printf("Você escolheu Refrigerante. Bom apetite!\n");
+                    break;
+                case 2:
+                    printf("Você escolheu Suco Natural. Bom apetite!\n");
+                    break;
+                case 3:
+                    printf("Você escolheu Água. Bom apetite!\n");
+                    break;
+                default:
+                    printf("Opção inválida. Por favor, escolha uma opção válida.\n");
+            }
+            break;
+        case 4:
+            printf("Saindo do menu...\n");
+            break;
+        default:
+            printf("Opção inválida. Por favor, escolha uma opção válida.\n");
+    }
+
+    return 0;
+}
